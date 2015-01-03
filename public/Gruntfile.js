@@ -3,7 +3,6 @@ module.exports = function (grunt) {
 
   // grunt dev target=dev
   var target = "./build";
-
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
     concat: {
