@@ -2,7 +2,7 @@
   "scripts": {
     "vendor": [
       "bower_components/angular/angular.js",
-      "bower_components/angular-ui-router/release/aungular-ui-router.js"
+      "bower_components/angular-ui-router/release/angular-ui-router.js"
     ],
     "app": [
       "components/app.js",
