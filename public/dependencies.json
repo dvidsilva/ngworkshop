@@ -24,7 +24,7 @@
   },
   "assets": {
     "fonts": "bower_components/bootstrap/dist/fonts/",
-    "html": ["components/**/*.html"],
+    "html": ["./**/*.html"],
     "images": "assets/images/",
     "sounds": "assets/sounds/",
     "less": "assets/less",
