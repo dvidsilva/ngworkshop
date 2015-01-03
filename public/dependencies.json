@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "vendor": [
+      "bower_components/angular/angular.js",
+      "bower_components/angular-ui-router/release/aungular-ui-router.js"
+    ],
+    "app": [
+      "components/app.js",
+      "components/config/*.js",
+      "components/directives/*.js",
+      "components/filters/*.js",
+      "components/timeline/*.js",
+      "components/tweets/*.js",
+      "components/users/*.js"
+    ]
+  },
+  "styles": {
+    "vendor": [
+      "bower_components/bootstrap/dist/css/bootstrap.css"
+    ],
+    "app": [
+      "assets/css/*"
+    ]
+  },
+  "assets": {
+    "fonts": "bower_components/bootstrap/dist/fonts/",
+    "html": ["components/**/*.html"],
+    "images": "assets/images/",
+    "sounds": "assets/sounds/",
+    "less": "assets/less",
+    "data" : "assets/data",
+    "pdf" : "assets/pdf"
+  }
+}
