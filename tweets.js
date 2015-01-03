@@ -24,10 +24,11 @@ module.exports = function (app) {
 
   app.post('/tweet', function (req, res) {
     var tweet;
-    if (!req.tweet) {
+    if (!req.body.content || !req.body.username) {
+      console.log(req.body);
       return res.json({error: 'emptytweet'});
     }
-    tweet = new Tweet({ content: req.tweet.content, username: req.tweet.usernam });
+    tweet = new Tweet({ content: req.content, username: req.username });
     tweet.save(function (err, tweet) {
       if (err) {
         return res.json({error: err});
