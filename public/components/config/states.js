@@ -4,7 +4,7 @@ angular.module('ngWorkshop')
   $stateProvider
     .state('home', {
       url: "/",
-      templateUrl: "/timeline/home.html"
+      templateUrl: "/html/timeline/home.html"
     });
 });
 
