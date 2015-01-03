@@ -12,11 +12,11 @@ module.exports = function (grunt) {
       },
       dist: {
         src: dependencies.scripts.vendor,
-        dest: target + "/scripts/vendor.js"
+        dest: target + "/js/vendor.js"
       },
       app: {
         src: dependencies.scripts.app,
-        dest: target + "/scripts/app.js"
+        dest: target + "/js/app.js"
       },
       css_vendor: {
         src: dependencies.styles.vendor,
