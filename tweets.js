@@ -10,7 +10,6 @@ db.once('open', function (callback) {
   console.log('connected to mongo database');
 });
 
-
 TweetSchema = mongoose.Schema({
     content: String,
     username: String
@@ -18,14 +17,34 @@ TweetSchema = mongoose.Schema({
 
 Tweet = mongoose.model('Tweet',TweetSchema);
 
+
+
 module.exports = function (app) {
   'use strict';
-  app.post('/tweet', function () {
 
+  app.post('/tweet', function (req, res) {
+    var tweet;
+    if (!req.tweet) {
+      return res.json({error: 'emptytweet'});
+    }
+    tweet = new Tweet({ content: req.tweet.content, username: req.tweet.usernam });
+    tweet.save(function (err, tweet) {
+      if (err) {
+        return res.json({error: err});
+      }
+      return res.json({tweet: tweet, saved: true});
+    });
   });
-  app.get('/tweets', function () {
 
+  app.get('/tweets', function (req, res) {
+    Tweet.find(function (err, tweets) {
+      if (err) {
+        return res.json({error: err});
+      }
+      res.json({tweets: tweets});
+    });
   });
+
   app.get('/tweets/:user', function () {
 
   });
