@@ -25,4 +25,8 @@ run `npm install` in the root
 
 run `npm install` and `bower install` on the public folder
 
+Then in a different window run `mongod` and make sure mongodb starts.
 
+Then in the root run `node index.js` to run the server. verify is working by going to localhost:3000
+
+In the public folder run `grunt dev` to compile assets
