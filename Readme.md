@@ -8,7 +8,18 @@ Dependencies
 
 Clone this repo to your projects folder
 
-git@github.com:dvidsilva/ngworskshop.git
+```shell
+git clone git@github.com:dvidsilva/ngworskshop.git
+```
+
+Install the command line tools
+
+```shell
+npm install -g grunt-cli
+npm install -g bower
+```
+
+
 
 run `npm install` in the root
 
