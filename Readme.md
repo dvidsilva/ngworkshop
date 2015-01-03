@@ -9,7 +9,7 @@ Dependencies
 Clone this repo to your projects folder
 
 ```shell
-git clone git@github.com:dvidsilva/ngworskshop.git
+git clone git@github.com:dvidsilva/ngworkshop.git
 ```
 
 Install the command line tools
